@@ -1,0 +1,33 @@
+{
+  "name": "timeless",
+  "version": "0.0.0",
+  "description": "A Wordpress theme for microbreweries and craft beerspeople.",
+  "main": "index.php",
+  "scripts": {
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Psykat/beerCraft.git"
+  },
+  "keywords": [
+    "beer",
+    "good",
+    "times",
+    "wordpress"
+  ],
+  "author": "Simon Bloom and Katrina Bautista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Psykat/beerCraft/issues"
+  },
+  "homepage": "https://github.com/Psykat/beerCraft",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^0.8.2",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-stylus": "^0.18.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-svginject": "0.0.2"
+  }
+}

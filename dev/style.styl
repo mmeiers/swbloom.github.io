@@ -1,0 +1,51 @@
+// variables
+$yellow = #EBE0CA
+
+
+// embedded fons
+@font-face 
+	font-family: 'dubiel';
+	src: url('../fonts/dubiel.ttf')  format('truetype'), /* Safari, Android, iOS */
+	// other compatibilities commented out since this exclusively for chrome browsers
+	//url('fonts/abc-font.eot'); /* IE9 Compat Modes */
+	//src: url('fonts/abc-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	//     url('fonts/abc-font.woff') format('woff'), /* Modern Browsers */
+	//     url('fonts/abc-font.svg#svgFontName') format('svg') /* Legacy iOS */
+@font-face 
+	font-family: 'bodoni';
+	src: url('../fonts/bodoni.ttf')  format('truetype'), /* Safari, Android, iOS */
+	// other compatibilities commented out since this exclusively for chrome browsers
+	//url('fonts/abc-font.eot'); /* IE9 Compat Modes */
+	//src: url('fonts/abc-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	//     url('fonts/abc-font.woff') format('woff'), /* Modern Browsers */
+	//     url('fonts/abc-font.svg#svgFontName') format('svg') /* Legacy iOS */
+
+html
+	background url(../images/background.jpg) no-repeat center center fixed
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-size cover
+
+.spacer-left
+	width 70%
+	float left
+	clear both
+
+#time 
+	font-family: bodoni;
+	color #fff
+	font-size 80px
+	
+.headline
+	margin-top: 155px
+	width 30%
+	float left
+	font-family dubiel;
+	color: $yellow;
+	font-size: 40px
+
+.product-name
+	margin-left 200px
+	color #fff
+	font-size 100px
