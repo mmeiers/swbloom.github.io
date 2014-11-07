@@ -5,17 +5,25 @@
 	<title>Timeless</title>
 	<link rel="stylesheet" href="dist/css/style.css">
 	<script src="dist/js/time.js" type="text/javascript"></script>
+	<script src="dist/js/libs/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="dist/js/libs/jquery.fittext.js" type="text/javascript"></script>
+
 </head>
 <body onload="startTime()">
-	<div class="spacer-left">&nbsp;</div>
-	<div class="headline">
-		It's 
-			<span id="time"></span>, <!-- The time is automatically populated by time.js -->
-			<br />
-		but this watch is
+	<div class="left">
+		Left
 	</div>
-	<div class="product-name">Timeless</div>
+	<div class="right">
+		<div class="lead desktop">
+			It's <span id="time"></span>, <br />but this watch is
+		</div>
+		<div class="lead mobile">
+		</div>
+		<div class="title">
+			Timeless<span class="yellow">.</span>
+		</div>
+	</div>
 
-	
+
 </body>
 </html>

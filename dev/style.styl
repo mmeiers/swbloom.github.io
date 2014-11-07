@@ -1,8 +1,11 @@
 // variables
 $yellow = #EBE0CA
 
+// libraries
+@import 'grid.styl'
 
-// embedded fons
+
+// embedded fonts
 @font-face 
 	font-family: 'dubiel';
 	src: url('../fonts/dubiel.ttf')  format('truetype'), /* Safari, Android, iOS */
@@ -26,26 +29,33 @@ html
 	-moz-background-size cover
 	-o-background-size cover
 	background-size cover
+	
 
-.spacer-left
-	width 70%
-	float left
-	clear both
+
+.left
+	column(7)
+
+.right 
+	column(5)
+	padding-top: 8%;
+	
+.lead
+	font-size: 1.8em;
+	font-family dubiel;
+	color: $yellow
+	text-align center
 
 #time 
-	font-family: bodoni;
+	font-family: bodoni
 	color #fff
-	font-size 80px
+	font-size 200%
 	
-.headline
-	margin-top: 155px
-	width 30%
-	float left
-	font-family dubiel;
-	color: $yellow;
-	font-size: 40px
 
-.product-name
-	margin-left 200px
-	color #fff
-	font-size 100px
+.yellow 
+	color $yellow
+
+.title 
+	text-align: center;
+	padding-top: 10%;
+	font-size: 130px
+	color white;
