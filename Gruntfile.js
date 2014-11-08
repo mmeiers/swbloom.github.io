@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         compile: {
           files: {
             'dist/css/style.css': 'dev/style.styl', // 1:1 compile
-               
+            'dist/css/fullscreen.css': 'dev/fullscreen.styl'  
           },
           options: {
              use: [require('autoprefixer-stylus')]

@@ -1,0 +1,64 @@
+// variables
+$yellow = #EBE0CA
+
+// libraries
+@import 'grid.styl'
+
+
+// embedded fonts
+@font-face 
+	font-family: 'dubiel';
+	src: url('../fonts/dubiel.ttf')  format('truetype'), /* Safari, Android, iOS */
+	// other compatibilities commented out since this exclusively for chrome browsers
+	//url('fonts/abc-font.eot'); /* IE9 Compat Modes */
+	//src: url('fonts/abc-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	//     url('fonts/abc-font.woff') format('woff'), /* Modern Browsers */
+	//     url('fonts/abc-font.svg#svgFontName') format('svg') /* Legacy iOS */
+@font-face {
+	font-family:'BodoniSvtyTwoOSITCTT-Bold';
+	src: url('BodoniSvtyTwoOSITCTT-Bold_latin+latin-ext_gdi.eot');
+	src: url('BodoniSvtyTwoOSITCTT-Bold_latin+latin-ext_gdi.eot?#iefix') format('embedded-opentype'),
+		url('BodoniSvtyTwoOSITCTT-Bold_latin+latin-ext_gdi.woff') format('woff'),
+		url('BodoniSvtyTwoOSITCTT-Bold_latin+latin-ext_gdi.ttf') format('truetype'),
+		url('BodoniSvtyTwoOSITCTT-Bold_latin+latin-ext_gdi.svg#BodoniSvtyTwoOSITCTT-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2044;
+}
+body 
+	background-color: black;
+
+video#bgvid 
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background: url(polina.jpg) no-repeat;
+	background-size: contain;
+	width: 20%;
+	height: 20%;
+	left: 40%;
+
+.lead
+	font-size: 1.8em;
+	font-family dubiel;
+	color: $yellow
+	text-align center
+
+#time 
+	font-family: bodoni
+	color #fff
+	font-size 200%
+	
+
+.yellow 
+	color $yellow
+
+.title
+	position absolute
+	bottom 0 
+	font-family 'BodoniSvtyTwoOSITCTT-Bold'
+	margin-left 20px
+	font-size: 260px
+	color white;
+	
