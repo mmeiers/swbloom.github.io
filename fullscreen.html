@@ -9,17 +9,27 @@
 </head>
 
 <body onload="startTime()">
-<div class="spacer-left">&nbsp;</div>
-	<div class="headline">
-		It's 
-			<span id="time"></span>, <!-- The time is automatically populated by time.js -->
-			<br />
+<div class="wrapper">
+	<div class="spacer-left">&nbsp;</div>
+		<div class="headline">
+			It's 
+				<span id="time"></span>, <!-- The time is automatically populated by time.js -->
+
 		but this watch is
+		<div class="title">Timeless.</div>
+		</div>
+		
+		<video autoplay loop poster="polina.jpg" id="bgvid">
+	<!--	<source src="polina.webm" type="video/webm">-->
+		<source src="dist/video/TimelessOptim.mp4" type="video/mp4">
+		</video>
+		<div class="logos">
+			<img src="dist/images/git.png">
+			<img src="dist/images/rise.png">
 	</div>
-	<div class="title">Timeless.</div>
-	<video autoplay loop poster="polina.jpg" id="bgvid">
-<!--	<source src="polina.webm" type="video/webm">-->
-	<source src="dist/video/breitlingoptim.mp4" type="video/mp4">
-	</video>
+	<div class="your_company">
+		YOUR COMPANY HERE
+	</div>
+</div>
 </body>
 </html>
