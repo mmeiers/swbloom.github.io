@@ -2,9 +2,8 @@ function startTime() {
 	var today = new Date();
 	var h = today.getHours();
 	var m = today.getMinutes();
-	var s = today.getSeconds();
+
 	m = checkTime(m);
-	s = checkTime(s);
 	var am = true;
 
 	// convert hours from military to regular
@@ -12,7 +11,7 @@ function startTime() {
 		am = false;
 		h = h - 12;
 	}
-	document.getElementById('time').innerHTML = h+":"+m+":"+s+ (am ? " AM" : " PM");
+	document.getElementById('time').innerHTML = h+":"+m;
 	var t = setTimeout(function(){startTime()},500);
 }
 function checkTime(i) {

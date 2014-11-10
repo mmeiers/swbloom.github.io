@@ -68,7 +68,8 @@ video#bgvid
 	font-family alex_brushregular;
 	text-align center;
 	color #fff
-
+	text-shadow: 1px 1px 30px #000 
+	
 #time 
 	font-family: 'bebas_neueregular'
 	color $blue
@@ -88,7 +89,7 @@ video#bgvid
 	padding 20px
 
 .title
-	color #000
+	color #fff
 
 .your_company
 	text-shadow: 1px 1px 30px #000 
@@ -99,4 +100,75 @@ video#bgvid
 	font-size 100px
 	color $blue
 	padding 20px
+
+.social
+	width 40%
+	height 40%
+
+/* Chrome Pixel ----------- */
+@media only screen and (min-width : 1280px) 
+	video#bgvid 
+		left -425px;
+	.your_company
+		font-size 70px
+		color $blue
+
+	#time 
+		font-family: 'alex_brushregular'
+		color $blue
+		font-size 100px
+		text-shadow: 1px 1px 30px #000 
+	.headline
+		font-size: 120px
+		font-family alex_brushregular;
+		text-align center;
+		color #fff
+		margin-top 40px
+
+@media only screen and (min-width : 1360px)
+	.wrapper 
+		margin 50px
+
+	.headline
+		font-size: 100px
+		font-family alex_brushregular;
+		text-align center;
+		color #fff
+		margin-top 40px
+	#time 
+		font-family: 'alex_brushregular'
+		color $blue
+		font-size 100px
+		margin-top 50px
+		text-shadow: 1px 1px 30px #000 
+	.your_company
+		font-size 80px
+		color red
+	.title
+		color $blue
+	video#bgvid 
+		left 0px
+
+@media only screen and (min-width : 1920px) 
+	.your_company
+		color #fff
+
+
+/* 4k ----------- */
+@media only screen and (min-width : 3840px) 
+	.wrapper 
+		margin 100px
+	.headline
+		font-size: 200px
+		font-family alex_brushregular;
+		text-align center;
+		color #fff
+	#time 
+		font-family: 'alex_brushregular'
+		color $blue
+		font-size 300px
+		text-shadow: 1px 1px 30px #000 
+	.your_company
+		font-size 200px
+		color $blue
 	
