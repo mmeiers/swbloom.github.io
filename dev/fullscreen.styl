@@ -56,7 +56,7 @@ body
 	background-color: black;
 
 video#bgvid 
-	position: fixed; right: 0; bottom: 0;
+	position: fixed; right: 0; bottom: 0; left: -424px;
 	min-width: 100%; min-height: 100%;
 	width: auto; height: auto; z-index: -100;
 	background: url(polina.jpg) no-repeat;
@@ -71,7 +71,7 @@ video#bgvid
 	text-shadow: 1px 1px 30px #000 
 	
 #time 
-	font-family: 'bebas_neueregular'
+	font-family: 'alex_brushregular'
 	color $blue
 	font-size 200px
 	text-shadow: 1px 1px 30px #000 
@@ -97,13 +97,12 @@ video#bgvid
 	position absolute
 	bottom 0
 	right 0
-	font-size 100px
+	font-size 80px
 	color $blue
-	padding 20px
 
 .social
-	width 40%
-	height 40%
+	width 22%
+	height 22%
 
 /* Chrome Pixel ----------- */
 @media only screen and (min-width : 1280px) 
@@ -143,15 +142,21 @@ video#bgvid
 		text-shadow: 1px 1px 30px #000 
 	.your_company
 		font-size 80px
-		color red
+		color $blue
 	.title
 		color $blue
 	video#bgvid 
-		left 0px
+		left -310px
 
-@media only screen and (min-width : 1920px) 
+@media only screen and (min-width : 1746px) 
 	.your_company
 		color #fff
+	video#bgvid 
+		position: fixed; right: 0; bottom: 0; left: 0
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: -100;
+		background: url(polina.jpg) no-repeat;
+		background-size: contain;
 
 
 /* 4k ----------- */
