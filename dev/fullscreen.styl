@@ -58,6 +58,7 @@ $bebas = 'bebas_neueregular'
 body 
 	background-color: black;
 
+
 video#bgvid 
 	object-fit cover
 	
@@ -117,6 +118,19 @@ video#bgvid
 	position absolute
 	z-index -999
 	font-size 0
+	
+
+/* SVG Animations */
+.svg-elephant
+	display inline-block
+	vertical-align middle
+	#head
+		transition 1s all
+		transform-origin 15% 35%
+	&:hover
+		#head
+			transform rotate(-36deg);
+			
 /* Chrome Pixel ----------- */
 @media only screen and (min-width : 1280px) 
 	video#bgvid 
