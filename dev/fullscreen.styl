@@ -6,9 +6,13 @@ $yellow = #EBE0CA
 $blue = #55CEFF
 $bebas = 'bebas_neueregular'
 
+
+
 // libraries
 @import 'grid.styl'
 
+// media queries
+@import 'mq.styl'
 
 // embedded fonts
 @font-face 
@@ -138,113 +142,4 @@ video#bgvid
 	transition 1s all
 	&:hover
 		transform rotate(-360deg);
-	
-/* Narrow Screens --------- */
-@media only screen and (max-width : 1280px) 
-	video#bgvid 
-		object-fit: cover;
-		width 100%
-		height 50%
 
-
-	#time 
-		font-family: 'alex_brushregular'
-		color $blue
-		font-size 100px
-		text-shadow: 1px 1px 30px #000 
-	.headline
-		font-size: 100px
-		font-family alex_brushregular;
-		text-align center;
-		color #fff
-		margin-top 40px
-			
-/* Chrome Pixel ----------- */
-@media only screen and (min-width : 1280px) 
-	video#bgvid 
-		object-fit: cover;
-		width 100%
-		height 50%
-
-
-	#time 
-		font-family: 'alex_brushregular'
-		color $blue
-		font-size 100px
-		text-shadow: 1px 1px 30px #000 
-	.headline
-		font-size: 120px
-		font-family alex_brushregular;
-		text-align center;
-		color #fff
-		margin-top 40px
-
-@media only screen and (min-width : 1360px)
-	.svg-elephant
-		width 200%
-		height 200%
-	.wrapper 
-		margin 50px
-
-	.headline
-		font-size: 130px
-		font-family alex_brushregular;
-		text-align center;
-		color #fff
-		margin-top 40px
-	#time 
-		font-family: 'alex_brushregular'
-		color $blue
-		font-size 130px
-		margin-top 50px
-		text-shadow: 1px 1px 30px #000 
-
-	.title
-		color $blue
-	.logo
-		width 60%
-		height 60%
-	
-	svg
-		width 10%
-		height 10%
-		
-
-@media only screen and (min-width : 1746px) 
-
-	.headline
-		font-size: 200px
-		font-family alex_brushregular;
-		text-align center;
-		color #fff
-		margin-top 40px
-	.logo
-		width 70%
-		height 70%
-	#time 
-		font-family: 'alex_brushregular'
-		color $blue
-		font-size 200px
-		margin-top 50px
-		text-shadow: 1px 1px 30px #000 
-
-	svg
-		width 15%
-		height 15%
-		
-
-
-/* 4k ----------- */
-@media only screen and (min-width : 3840px) 
-	.wrapper 
-		margin 100px
-	.headline
-		font-size: 200px
-		font-family alex_brushregular;
-		text-align center;
-		color #fff
-	#time 
-		font-family: 'alex_brushregular'
-		color $blue
-		font-size 300px
-		text-shadow: 1px 1px 30px #000 
