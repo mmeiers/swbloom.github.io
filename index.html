@@ -1,29 +1,57 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Timeless</title>
+	<title>Timeless - An Advertisement for Watches</title>
 	<link rel="stylesheet" href="dist/css/style.css">
 	<script src="dist/js/time.js" type="text/javascript"></script>
-	<script src="dist/js/libs/jquery-1.11.1.min.js" type="text/javascript"></script>
-	<script src="dist/js/libs/jquery.fittext.js" type="text/javascript"></script>
+	<script src="dist/js/SVGinject.js" type="text/javascript"></script>
+
+	<!-- *** HTML Template Meta *** -->
+	<meta name="description" content="An HTML5 Video Advertisement for a Watch company. Tells the local time in the advertiser's city." />
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Timeless">
+	<meta itemprop="description" content="An HTML5 Video Advertisement for a Watch company. Tells the local time in the advertiser's city.">
+	<meta itemprop="image" content="http://simonwbloom.com/rise/timeless/timeless-screencap.png">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@RiseVision">
+	<meta name="twitter:title" content="Timeless">
+	<meta name="twitter:description" content="An HTML5 Video Advertisement for a Watch company. Tells the local time in the advertiser's city.">
+	<meta name="twitter:image:src" content="http://simonwbloom.com/rise/timeless/timeless-screencap.png">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Timeless" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="swbloom.github.io/fullscreen.html" />
+	<meta property="og:image" content="http://simonwbloom.com/rise/timeless/timeless-screencap.png" />
+	<meta property="og:description" content="An HTML5 Video Advertisement for a Watch company. Tells the local time in the advertiser's city" />
 
 </head>
+
 <body onload="startTime()">
-	<div class="left">
-		Left
-	</div>
-	<div class="right">
-		<div class="lead desktop">
-			It's <span id="time"></span>, <br />but this watch is
-		</div>
-		<div class="lead mobile">
-		</div>
-		<div class="title">
-			Timeless<span class="yellow">.</span>
-		</div>
-	</div>
 
-
+		<div class="headline">
+			It's 
+				<span id="time"></span>, <!-- The time is automatically populated by time.js -->
+		<br />
+		but this watch is <span class="title">timeless</span>.
+		
+		</div>
+		<div class="vidcontainer">
+		<video autoplay loop poster="polina.jpg" id="bgvid">
+	<!--	<source src="polina.webm" type="video/webm">-->
+		<source src="dist/video/centered.mp4" type="video/mp4">
+		</video>
+		</div>
+		<div class="logos">
+			<a href="github.com/swbloom/swbloom.github.io "><div class="svg-git"></div></a>
+			<a href="http://www.simonwbloom.com/"><div class="svg-elephant"></div></a>
+	</div>
+	<div class="your_company">
+		<img src="dist/images/Folex.png" class="logo">
+	</div>
 </body>
 </html>
