@@ -122,14 +122,24 @@ video#bgvid
 
 /* SVG Animations */
 .svg-elephant
-	display inline-block
+	display inline
+	padding-left 4px
 	vertical-align middle
+	width 200%
+	height 200%
 	#head
 		transition 1s all
 		transform-origin 15% 35%
 	&:hover
 		#head
 			transform rotate(-36deg);
+.svg-git
+	display inline
+	color #fff
+	transition 1s all
+	&:hover
+		transform rotate(-360deg);
+	
 			
 /* Chrome Pixel ----------- */
 @media only screen and (min-width : 1280px) 
@@ -140,7 +150,7 @@ video#bgvid
 	.your_company
 		font-size 40px
 		color #fff
-		padding 20px
+		padding-right 20px
 
 	#time 
 		font-family: 'alex_brushregular'
@@ -155,6 +165,9 @@ video#bgvid
 		margin-top 40px
 
 @media only screen and (min-width : 1360px)
+	.svg-elephant
+		width 200%
+		height 200%
 	.wrapper 
 		margin 50px
 
